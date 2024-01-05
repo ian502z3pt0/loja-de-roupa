@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Pagina do Produto</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <i class="bi bi-cart-fill"></i>
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Ian Shop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Novidades</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Categoria
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Camisa</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Calça</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Moletom</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Ofertas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./carrinho.html"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                  </svg></a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Digite o que procura" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+              </form>
+            </div>
+          </div>
+    </nav>
+
+    <div style="display:flex">
+        <i class="bi bi-circle-fill"></i>
+        <div>
+            <img src="https://m.media-amazon.com/images/I/61dgPvVilBL._AC_SX679_.jpg" style="height: 300px; margin-left: 60px; margin-top: 40px;">
+            <p style="margin-top: 30px; font-size: 24px; margin-bottom: 0; margin-left: 40px;">Avaliação</p>
+            <div class="rating">
+                <span class="star" style="font-size: 30px; color:rgb(255, 255, 0); margin-left: 40px;">&#9733;</span>
+                <span class="star" style="font-size: 30px; color:yellow; ">&#9733;</span>
+                <span class="star" style="font-size: 30px; color:yellow;">&#9733;</span>
+                <span class="star" style="font-size: 30px; color:yellow;">&#9733;</span>
+                <span class="star" style="font-size: 30px; color:yellow;">&#9733;</span>
+            </div>
+            <section class="avaliacao">
+                <h2>Avaliações dos Clientes</h2>
+                <div class="comentario">
+                    <p>Cliente 1: Ótimos produtos, entrega rápida!</p>
+                </div>
+                <div class="comentario">
+                    <p>Cliente 2: Adorei a variedade de roupas disponíveis.</p>
+                </div>
+    
+                <form action="#" method="post" style="margin-top: 20px;">
+                    <label style="display: block;margin-bottom: 5px;" for="nome">Nome:</label>
+                    <input class="intext" type="text" id="nome" name="nome" required>
+    
+                    <label style="display: block;margin-bottom: 5px;" for="comentario">Comentário:</label>
+                    <textarea class="intext" id="comentario" name="comentario" rows="4" required></textarea>
+    
+                    <button class="butaoproduto" type="submit">Adicionar Comentário</button>
+                </form>
+            </section>
+        </div>
+        <div style="margin-top: 43px; margin-left: 40px;">
+            <h3>Jaqueta Columbia Masculina Watertight Ii Preto</h3>
+            <p>R$653,28</p>
+            <button type="button" style="margin-bottom: 10px;" class="btn btn-info">8x de R$81,66</button><br/>
+            <p>Cor: Amarelo</p>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" style="color:yellow" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                    <circle cx="8" cy="8" r="8"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" style="color: red" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                    <circle cx="8" cy="8" r="8"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" style="color: green" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                    <circle cx="8" cy="8" r="8"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"  style="color:blue"class="bi bi-circle-fill" viewBox="0 0 16 16">
+                    <circle cx="8" cy="8" r="8"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" style="color:darkgoldenrod" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                    <circle cx="8" cy="8" r="8"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" style="color:blueviolet" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                    <circle cx="8" cy="8" r="8"/>
+                </svg>
+            </div>
+            <p>Tamanho: M</p>
+            <div>
+                <button type="button" class="btn btn-light">P</button>
+                <button type="button" class="btn btn-light">M</button>
+                <button type="button" class="btn btn-light">G</button>
+                <button type="button" class="btn btn-light">GG</button>
+            </div>
+            <button style="margin-top: 10px;" type="button" class="btn btn-dark">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    
+</body>
+</html>
