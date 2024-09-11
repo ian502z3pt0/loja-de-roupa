@@ -5,43 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ian Shop</title>
     <link rel="stylesheet" href="./CSS/style.css">
+    <script src="./script.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <i class="bi bi-cart-fill"></i>
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Ian Shop</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Novidades</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./filtro.html">Categoria</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Ofertas</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./carrinho.html"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
-                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-                </svg></a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Digite o que procura" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Pesquisar</button>
-            </form>
-          </div>
-        </div>
-    </nav>
+    
+    <nav-bar></nav-bar>
 
     <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
@@ -66,169 +35,8 @@
     </div>
     <main>
         <div class="divNovidade">
-            <h1>Novidades</h1>
-            <div style="display:flex;gap: 20px; margin: 0px; margin-left: 80px;">
-                <div class="card" style="width: 12rem; margin-bottom: 15px; height: 500px;">
-                  <img style="height: 220px;" src="https://m.media-amazon.com/images/I/61dgPvVilBL._AC_SX679_.jpg"class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <p class="card-text">Jaqueta Columbia Masculina Watertight Ii Preto <p style="font-weight: 700;">R$653,28</p></p>
-                    <a href="./produto.html" class="btn btn-primary">Comprar</a>
-                  </div>
-                </div>
-            
-              <div class="card" style="width: 12rem; margin-bottom: 15px;">
-                  <img style="height: 220px;" src="https://m.media-amazon.com/images/I/51Hnso8+CYL._AC_SX342_.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <p class="card-text">Calça Moletom Umbro TWR Fit II Preta <p style="font-weight: 700;">R$159,90</p></p>
-                    <a href="./produto.html" class="btn btn-primary">Comprar</a>
-                  </div>
-              </div>
-              <div class="card" style="width: 12rem; margin-bottom: 15px;">
-                  <img style="height: 220px;" src="https://m.media-amazon.com/images/I/41dZnbcHg1L._AC_SX466_.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <p class="card-text">Calças Calça de tecido Tenacity, New Balance, Masculino<p style="font-weight: 700;">R$449,99</p></p>
-                    <a href="./produto.html" class="btn btn-primary">Comprar</a>
-                  </div>
-              </div>
-              <div class="card" style="width: 12rem; margin-bottom: 15px;">
-                  <img style="height: 220px;" src="https://m.media-amazon.com/images/I/71Mn1TtDvfL._AC_SX679_.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <p class="card-text">Blusas femininas verão golas quadradas<p style="font-weight: 700;">R$149,96</p></p>
-                    <a href="./produto.html" class="btn btn-primary">Comprar</a>
-                  </div>
-              </div>
-              <div class="card" style="width: 12rem; margin-bottom: 15px;">
-                  <img style="height: 220px;" src="https://m.media-amazon.com/images/I/61InxKFz9AL._AC_SX466_.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <p class="card-text">Blusa Feminina Transparente Com Pérolas<p style="font-weight: 700;">R$117,78</p></p>
-                    <a href="./produto.html" class="btn btn-primary">Comprar</a>
-                  </div>
-              </div>
-            </div>
+            <div id="product-container"></div>
         </div>
-        <div class="divNovidade">
-          <h1>Promoção</h1>
-          <div style="display:flex;gap: 20px; margin: 0px; margin-left: 80px;">
-              <div class="card" style="width: 12rem; margin-bottom: 15px; height: 500px;">
-                <img style="height: 220px;" src="https://m.media-amazon.com/images/I/81V4Yo-EzfL._AC_SX679_.jpg"class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Kit 4 Camisetas Masculinas Básica Lisa Algodão 30.1 Premium <p style="font-weight: 700;">-16% R$69,90<br/> De: R$82,91</p></p>
-                  <a href="./produto.html" class="btn btn-primary">Comprar</a>
-                </div>
-              </div>
-          
-            <div class="card" style="width: 12rem; margin-bottom: 15px;">
-                <img style="height: 220px;" src="https://m.media-amazon.com/images/I/61BzE4fHS7L._AC_SX679_.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Camiseta Masculina Básica <p style="font-weight: 700;">-10% R$69,99 <br/>De: R$77,99</p></p>
-                  <a href="./produto.html" class="btn btn-primary">Comprar</a>
-                </div>
-            </div>
-            <div class="card" style="width: 12rem; margin-bottom: 15px;">
-                <img style="height: 220px;" src="https://m.media-amazon.com/images/I/415n4HSMmrL._AC_SX679_.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Kit 3 Camisetas Masculina SSB Brand Lisa Algodão<p style="font-weight: 700;">-16% R$69,90<br/> De: R$82,91</p></p>
-                  <a href="./produto.html" class="btn btn-primary">Comprar</a>
-                </div>
-            </div>
-            <div class="card" style="width: 12rem; margin-bottom: 15px;">
-                <img style="height: 220px;" src="https://m.media-amazon.com/images/I/71IdlKAmeLL._AC_SX425_.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Vestidos para mulheres verão manga curta<p style="font-weight: 700;">-10% 29,99 <br/>De: 38,0</p></p>
-                  <a href="#" class="btn btn-primary">Comprar</a>
-                </div>
-            </div>
-            <div class="card" style="width: 12rem; margin-bottom: 15px;">
-                <img style="height: 220px;" src="https://m.media-amazon.com/images/I/51vXV2FKSDL._AC_SX466_.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Vestido verão sem mangas slip decote V midi<p style="font-weight: 700;">-5% 23,13 <br/>De: 21,71</p></p>
-                  <a href="./produto.html" class="btn btn-primary">Comprar</a>
-                </div>
-            </div>
-          </div>
-      </div>
-      <div class="divNovidade">
-          <h1>Mais Vendidos</h1>
-          <div style="display:flex;gap: 20px; margin: 0px; margin-left: 80px;">
-              <div class="card" style="width: 12rem; margin-bottom: 15px; height: 500px;">
-                <img style="height: 220px;" src="https://m.media-amazon.com/images/I/71vmD2T5U0L._AC_SX425_.jpg"class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Easyoyo Blusa feminina casual solta xadrez com capuz blusa curta casaco casaco de lã jaqueta <p style="font-weight: 700;">R$159,00</p></p>
-                  <a href="./produto.html" class="btn btn-primary">Comprar</a>
-                </div>
-              </div>
-          
-            <div class="card" style="width: 12rem; margin-bottom: 15px;">
-                <img style="height: 220px;" src="https://m.media-amazon.com/images/I/711YqLQtkqL._AC_SX385_.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">VIISHOW Blusas femininas de chiffon com laço frontal, gola V, manga curta, manga morcego <p style="font-weight: 700;">R$417,00</p></p>
-                  <a href="./produto.html" class="btn btn-primary">Comprar</a>
-                </div>
-            </div>
-            <div class="card" style="width: 12rem; margin-bottom: 15px;">
-                <img style="height: 220px;" src="https://m.media-amazon.com/images/I/41szkAaW6eL._AC_SX679_.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Blusa Feminina Sobre Legging Longa Tapa Bumbum Fitness Liso Camisa<p style="font-weight: 700;">R$39,99</p></p>
-                  <a href="./produto.html" class="btn btn-primary">Comprar</a>
-                </div>
-            </div>
-            <div class="card" style="width: 12rem; margin-bottom: 15px;">
-                <img style="height: 220px;" src="https://m.media-amazon.com/images/I/71stbCtFCVL._AC_SX679_.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">BBIQI Camisas femininas de linho com botões, blusas de manga comprida com decote em V 2023 verão ajuste solto camisas de linho grandes<p style="font-weight: 700;">R$75,15</p></p>
-                  <a href="./produto.html" class="btn btn-primary">Comprar</a>
-                </div>
-            </div>
-            <div class="card" style="width: 12rem; margin-bottom: 15px;">
-                <img style="height: 220px;" src="https://m.media-amazon.com/images/I/81TsD-DGeYL.__AC_SY445_SX342_QL70_ML2_.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Blusa feminina outono verão 2023 roupas moda manga curta gola redonda blusa para mulheres A8<p style="font-weight: 700;">R$ 14,65</p></p>
-                  <a href="./produto.html" class="btn btn-primary">Comprar</a>
-                </div>
-            </div>
-          </div>
-      </div>
-      <div class="divNovidade">
-        <h1>Produtos em Alta</h1>
-        <div style="display:flex;gap: 20px; margin: 0px; margin-left: 80px;">
-            <div class="card" style="width: 12rem; margin-bottom: 15px; height: 500px;">
-              <img style="height: 220px;" src="https://m.media-amazon.com/images/I/41TGoSBHwAL._AC_SX569_.jpg"class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">Bermuda De Moletom Masculina Academia<p style="font-weight: 700;">R$49,99</p></p>
-                <a href="./produto.html" class="btn btn-primary">Comprar</a>
-              </div>
-            </div>
-        
-          <div class="card" style="width: 12rem; margin-bottom: 15px;">
-              <img style="height: 220px;" src="https://m.media-amazon.com/images/I/61s+yYIGcTL._AC_SX679_.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">Camisa Polo Básica Piquet Viscose John Pull<p style="font-weight: 700;">R$69,89 - R$69,90</p></p>
-                <a href="./produto.html" class="btn btn-primary">Comprar</a>
-              </div>
-          </div>
-          <div class="card" style="width: 12rem; margin-bottom: 15px;">
-              <img style="height: 220px;" src="https://m.media-amazon.com/images/I/51RyabAvevL._AC_SX425_.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">Saias-calção para mulheres inverno outono couro sintético maxi longo franzido corte alto saia básico feminino 2023 na moda Y2K<p style="font-weight: 700;">R$16,88 - R$55,51</p></p>
-                <a href="./produto.html" class="btn btn-primary">Comprar</a>
-              </div>
-          </div>
-          <div class="card" style="width: 12rem; margin-bottom: 15px;">
-              <img style="height: 220px;" src="https://m.media-amazon.com/images/I/81A8gUZDeVL._AC_SX466_.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">Saia feminina saia saia saia feminina veludo cotelê midi corte alto liso outono inverno saia 2023 moda<p style="font-weight: 700;">R$21,71 - R$36,18</p></p>
-                <a href="./produto.html" class="btn btn-primary">Comprar</a>
-              </div>
-          </div>
-          <div class="card" style="width: 12rem; margin-bottom: 15px;">
-              <img style="height: 220px;" src="https://m.media-amazon.com/images/I/61Rq+NOqXlL._AC_SX679_.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">JMSUN Jaqueta feminina de inverno Casaco de pelúcia feminino com capuz Colorblock solto zíper quente à prova de vento e resistente ao frio<p style="font-weight: 700;">R$124,00</p></p>
-                <a href="./produto.html" class="btn btn-primary">Comprar</a>
-              </div>
-          </div>
-        </div>
-      </div>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
