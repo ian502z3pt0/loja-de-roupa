@@ -1,0 +1,52 @@
+#product-container{
+    margin: 60px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.carrinho{
+    margin-bottom: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 10px;
+    display: inline-flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.divcompra{
+    width: 50%;
+    margin-left: 50px;
+}
+
+.avaliacao {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-left: 40px;
+}
+
+.comentario {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.intext{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.butaoproduto{
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+}
+
+.butaoproduto:hover{
+        background-color: #45a049;
+}
