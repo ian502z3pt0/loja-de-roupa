@@ -1,0 +1,48 @@
+{
+    "produtos": [
+        { 
+            "id": 1, 
+            "nome": "Jaqueta Columbia Masculina Watertight Ii Preto", 
+            "preco": 653.28,
+            "img": "https://m.media-amazon.com/images/I/61dgPvVilBL._AC_SX679_.jpg",
+            "cor": "Amarela"
+        },
+        { 
+            "id": 2, 
+            "nome": "Moletom Liso Abrigo Blusa de Frio", 
+            "preco": 59.00,
+            "img": "https://m.media-amazon.com/images/I/51nvr5bY8VL._AC_SY445_.jpg",
+            "cor": "Preto"
+        },
+        { 
+            "id": 3, 
+            "nome": "Camiseta Agodão T-Shirt", 
+            "preco": 39.00,
+            "img": "https://m.media-amazon.com/images/I/41ih3e8ILLL._AC_SX679_.jpg"
+        },
+        { 
+            "id": 4, 
+            "nome": "Camisa Social Masculina Manga", 
+            "preco": 94.90,
+            "img": "https://m.media-amazon.com/images/I/51O2VDOG81L._AC_SX569_.jpg"
+        },
+        { 
+            "id": 5, 
+            "nome": "Calça Casual KTNY, Hering, Masculino", 
+            "preco": 169.00,
+            "img": "https://m.media-amazon.com/images/I/71cZK8ZMikS._AC_SX466_.jpg"
+        },
+        { 
+            "id": 6, 
+            "nome": "Calça Cargo Tática Sarja Larga", 
+            "preco": 94.90,
+            "img": "https://m.media-amazon.com/images/I/51nKSRpoTkL._AC_SX679_.jpg"
+        },
+        { 
+            "id": 7, 
+            "nome": "Calça Jogger Masculina Camuflada ", 
+            "preco": 69.99,
+            "img": "https://m.media-amazon.com/images/I/61HMgFw52+L._AC_SX522_.jpg"
+        }
+    ]
+}
